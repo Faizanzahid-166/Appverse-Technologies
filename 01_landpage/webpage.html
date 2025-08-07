@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appverse-Technologies</title>
+      <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+
+
+    <!-- Navbar -->
+  <nav class="navbar">
+    <div class="mainlogo">
+      <h1>Appverse Technologies</h1>
+    </div>
+
+    <!-- Menu Icon -->
+    <div class="menu-icon" id="menu-icon">&#9776;</div>
+
+    <!-- Links -->
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#container">Home</a></li>
+      <li><a href="#projects" id="nav-project">Project</a></li>
+      <li><a href="#skills" id="nav-skill">Skill</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+ 
+
+    <!----------------------------components-->
+    <!-- Home section -->
+  
+ <!----------------------------components-->
+<div class="container" id="container">
+    <!-- --------------------------dev1 -->
+    <div class="component" >
+        <div  class="main">
+            <h1> Hi, I'm<strong>Muhammad Faizan Zahid</strong></h1>
+            <h2>Develop anything.</h2>
+            <p>Bulid a beautiful,modern website with flexible component bulit from scratch.</p>
+            <p>A passionate <strong>Frontend Developer</strong> specialized in building responsive, 
+            user-focused web apps</p> 
+            <p>using <strong>React</strong>, <strong>JavaScript</strong>, and <strong>Tailwind CSS</strong>.</p>
+            <p>Currently learning full-stack development with <strong>Laravel</strong> and <strong>MERN Stack</strong>. </p>
+            <p>I love solving problems and creating digital experiences that people enjoy using.</p>
+
+        </div>
+
+    <!-- --------------------------buttons -->
+     <div class="btn">
+     <button>View All Pages -></button>
+     <button>Documents</button>
+    </div>
+
+    </div>
+
+    <!-- --------------------------dev2 -->
+    <div  class="image">
+        <img src="./pics/c1.png" alt="Devkit" title="Devkit">
+    </div>
+
+</div>
+
+ <!-- Tab Buttons -->
+<div class="tab-buttons">
+  <button class="tab-btn active" onclick="showTab('projects')">Projects</button>
+  <button class="tab-btn" onclick="showTab('skills')">Skills</button>
+</div>
+
+<!-- Projects Section -->
+<div class="tab-section" id="projects">
+  <div class="card">
+    <h3>Color Changer</h3>
+    <p>A simple app that allows users to change background color.</p>
+    <p><strong>Tech:</strong> HTML, CSS, JavaScript</p>
+  </div>
+  <div class="card">
+    <h3>Weather App</h3>
+    <p>Fetches weather data from OpenWeather API.</p>
+    <p><strong>Tech:</strong> React, CSS</p>
+  </div>
+  <div class="card">
+    <h3>To-Do List</h3>
+    <p>CRUD operations with LocalStorage.</p>
+    <p><strong>Tech:</strong> React</p>
+  </div>
+   <div class="card">
+    <h3>Password Generator</h3>
+    <p>Generates strong random passwords based on user-selected criteria</p>
+    <p><strong>Tech:</strong> React</p>
+  </div>
+   <div class="card">
+    <h3>Currency Converter</h3>
+    <p>Converts currencies using real-time exchange rates.</p>
+    <p><strong>Tech:</strong> React</p>
+  </div>
+
+  <!-- Add more projects if you want -->
+</div>
+
+<!-- Skills Section -->
+<div class="tab-section hidden" id="skills">
+  <span class="skill-badge">JavaScript - A scripting language that adds interactivity, logic, and dynamic functionality to websites and applications.</span>
+  <span class="skill-badge">React - A powerful JavaScript library used to build fast, modular, and dynamic user interfaces for web applications.</span>
+  <span class="skill-badge">HTML5 – The latest version of the web's core markup language, used to structure and display web content.</span>
+  <span class="skill-badge">CSS3 – A stylesheet language that enhances the appearance of HTML with layout, colors, fonts, and animations.</span>
+  <span class="skill-badge">Laravel – A modern PHP framework designed for clean, efficient, and secure development of full-featured web applications.</span>
+  <span class="skill-badge">Node.js – A JavaScript runtime that enables server-side scripting and builds scalable, real-time web and network applications.</span>
+  <span class="skill-badge">API Integration – Connecting different software systems to exchange data and functionality via Application Programming Interfaces (APIs).</span>
+  <!-- Add more skills -->
+</div>
+
+<!-- csection-ontact -->
+<section id="contact" class="contact-section">
+  <div class="contact-container">
+    <h1>Contact Me</h1>
+
+    <div class="contact-info">
+      <p>📧 Email: <a href="mailto:faizanzahid166@gmail.com">faizanzahid166@gmail.com</a></p>
+      <p>🔗 LinkedIn: <a href="https://www.linkedin.com/in/faizanzahid166" target="_blank">linkedin.com/in/faizanzahid166</a></p>
+      <p>💻 GitHub: <a href="https://github.com/faizanzahid-166" target="_blank">github.com/faizanzahid-166</a></p>
+    </div>
+
+    <form class="contact-form">
+      <label>Name</label>
+      <input type="text" placeholder="Your name" />
+
+      <label>Email</label>
+      <input type="email" placeholder="you@example.com" />
+
+      <label>Message</label>
+      <textarea rows="4" placeholder="Write your message..."></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+ 
+
+<script src="script.js"></script>
+</body>
+</html>
