@@ -18,13 +18,15 @@ function App() {
   }
  
   //3
-  const deleteTodo = (id) => {setTodo((prev) => prev.filter((todo) => (todo.id !== id) ))}
+  const deleteTodo = (id) => {
+    setTodo((prev) => prev.filter((todo) => (todo.id !== id) ))
+  }
 
   //4
   const toggleComplete = (id) => {setTodo((prev) => 
     prev.map((prevTodo) => 
-    prevTodo.id === id ? 
-    {...prevTodo,completed : !prevTodo.completed} : prevTodo))}
+    prevTodo.id === id ? {...prevTodo,completed : !prevTodo.completed} : prevTodo))
+  }
 
   // local-storage
   // useEffect(() => {
@@ -44,23 +46,27 @@ function App() {
     if (todos && todos.length > 0) {
       setTodo(todos);
     }
-  }, []); // ✅ Dependency array correctly placed
+  }, []); // Dependency array correctly placed
   
   useEffect(() => {
     localStorage.setItem("todos", JSON.stringify(todos));
-  }, [todos]); // ✅ Dependency array correctly placed
+  }, [todos]); // Dependency array correctly placed
 
   return (
+    // todo provider from context
     <TodoProvider value={{todos, addTodo, updateTodo, deleteTodo, toggleComplete}}>
 
-      <div class='main-container'>
+      <div className='main-container'>
 
-        <h1 class='main-logo'> TODO LISTS</h1>
+        {/* main heading */}
+        <h1 className='main-logo'> TODO LISTS</h1>
 
-        <div class='todo-form'><Todoform /></div>
+        {/* todo-form component */}
+        <div className='todo-form'><Todoform /></div>
 
+        {/* todo-list component use maping */}
         {todos.map((todo) => (
-        <div key={todo.id} class='todo-item'>
+        <div key={todo.id} className='todo-item'>
         <Todoitem todo={todo} />
         </div>))}
         

@@ -16,19 +16,22 @@ function Todoitem({todo}) {
     toggleComplete(todo.id)
   }
   return (
-   <div class='form-items'> 
+    // todo lists
+   <div className='form-items'> 
 
     <div >
+      {/* todo checjbox */}
       <input type="checkbox" 
-             class='form-items-input-checkbox' 
+             className='form-items-input-checkbox' 
              checked={todo.completed} 
              onChange={toggleCompleted} />
-
+      {/* todo input value text or string */}
       <input type="text" value={todomsg}  
              readOnly={!todoeditable} 
              onChange={(e) => setTodomsg(e.target.value)}
-               className={`form-items-input ${todo.completed ? 'completed' : ''}`}  />
+             className={`form-items-input ${todo.completed ? 'completed' : ''}`}  />
 
+      {/* save && edit btn for text */}
       <button className={`form-items-btn-save ${todoeditable ? 'save-btn' : 'edit-btn'}`}
               disabled={todo.completed} onClick={() => {
                if (todo.completed) return;
@@ -37,11 +40,12 @@ function Todoitem({todo}) {
                }else setTodoeditable((prev) => !prev);}}>
                {todoeditable ? "save" : "edit"}
       </button>
-        
-        <button   class='form-items-btn-delete'
-                onClick={() => deleteTodo(todo.id)}> 
-                delete
-        </button>
+
+        {/* delete btn for text */}
+      <button className='form-items-btn-delete'
+              onClick={() => deleteTodo(todo.id)}> 
+              delete
+      </button>
     </div>
   </div>
   )
