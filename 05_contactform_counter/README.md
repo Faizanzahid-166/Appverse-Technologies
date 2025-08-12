@@ -21,6 +21,7 @@ Follow these steps to run the project locally:
 git clone https://github.com/Faizanzahid-166/Appverse-Technologies.git
 
 # 2. Navigate into the project directory
+cd Appverse-Technologies
 cd 05_contactform_counter
 
 # 3. Install dependencies
