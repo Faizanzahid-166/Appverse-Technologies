@@ -1,0 +1,50 @@
+import React, { useState } from 'react'
+import { useTodo } from '../context'
+import './Todoitem.css'
+
+function Todoitem({todo}) {
+  const [todoeditable, setTodoeditable] = useState(false)
+  const [todomsg, setTodomsg] = useState(todo.todo)
+  const {updateTodo, deleteTodo, toggleComplete}  = useTodo()
+
+  const editTodo = ()  => {
+    updateTodo(todo.id, {...todo,todo: todomsg})
+    setTodoeditable(false)
+  }
+
+  const toggleCompleted = () => {
+    toggleComplete(todo.id)
+  }
+  return (
+   <div class='form-items'> 
+
+    <div >
+      <input type="checkbox" 
+             class='form-items-input-checkbox' 
+             checked={todo.completed} 
+             onChange={toggleCompleted} />
+
+      <input type="text" value={todomsg}  
+             readOnly={!todoeditable} 
+             onChange={(e) => setTodomsg(e.target.value)}
+               className={`form-items-input ${todo.completed ? 'completed' : ''}`}  />
+
+      <button className={`form-items-btn-save ${todoeditable ? 'save-btn' : 'edit-btn'}`}
+              disabled={todo.completed} onClick={() => {
+               if (todo.completed) return;
+               if (todoeditable) {
+               editTodo();
+               }else setTodoeditable((prev) => !prev);}}>
+               {todoeditable ? "save" : "edit"}
+      </button>
+        
+        <button   class='form-items-btn-delete'
+                onClick={() => deleteTodo(todo.id)}> 
+                delete
+        </button>
+    </div>
+  </div>
+  )
+}
+
+export default Todoitem

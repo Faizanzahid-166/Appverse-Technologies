@@ -1,0 +1,63 @@
+.form-items{
+    width: fit-content;
+    margin: auto;
+    align-items: center;
+    padding: 2px;
+ 
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #1eff00; /* Optional: dim the color */
+}
+
+
+.form-items-input{
+    width: 300px;
+    padding: 0.5rem 0.7rem;
+    border-radius: 4px;
+    background-color: #f0f0f0; /* light gray background */
+    color: #020202;               /* dark text color for contrast */
+}
+
+.save-btn{
+    padding: 0.5rem 1.2rem;
+    background-color: #007e0a;
+    color: rgb(255, 255, 255);
+    border-radius:6px ;
+    font-size: medium;
+}
+
+.save-btn:hover{
+    background-color: #00c010;
+    color: rgb(0, 0, 0)
+}
+
+.edit-btn{
+    padding: 0.5rem 0.8rem;
+    background-color: #0017e9;
+    color: rgb(255, 255, 255);
+    border-radius:6px ;
+}
+
+.edit-btn:hover{
+    background-color: #0428f5ec;
+    color: rgb(0, 0, 0)
+}
+
+.form-items-btn-delete{
+    padding: 0.5rem 0.8rem;
+    background-color: #b60202;
+    color: rgb(255, 255, 255);
+     border-radius:6px ;
+}
+
+.form-items-btn-delete:hover{
+    background-color: #ec0000;
+    color: rgb(0, 0, 0)
+}
+
+
+@media only screen and (max-width: 780px) {
+
+}
