@@ -2,7 +2,7 @@ import { Link } from "react-router";
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-gray-200">
       <h1 className="text-4xl font-bold mb-6">Welcome to E-Commerce</h1>
       <p className="text-lg text-gray-600 mb-8">
         Sign up or login to access your dashboard.
