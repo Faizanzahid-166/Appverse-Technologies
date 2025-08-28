@@ -14,7 +14,7 @@ export default function SearchWeather() {
   //if city not found and wrap tru and catch
   const fetchWeather = async () => {
     if (!city) {
-      setError("Please enter a city name.");
+      setError("Please enter a city name. Try again later!!");
       return;
     }
 
@@ -78,7 +78,7 @@ export default function SearchWeather() {
 
       {/* error ? p : weather && div */}
       {error ? (
-        <p className="font-bold text-xl text-red-600">{error}</p>
+        <p className="font-bold text-xl text-red-800">{error}</p>
       ) : (
         weather && (
           <div className="w-fit lg:w-12/12 sm:w-3/4 md:w-2/3 border-2 border-gray-700 rounded-2xl grid gap-4 grid-cols-1 sm:grid-cols-2 p-3 m-2">
