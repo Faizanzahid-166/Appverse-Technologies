@@ -6,6 +6,8 @@ export const fetchUser = createAsyncThunk(
   "user/fetchUser",
   async (username) => {
     const response = await axios.get(`https://api.github.com/users/${username}`);
+    console.log("res",response);
+    
     return response.data;
   }
 );
