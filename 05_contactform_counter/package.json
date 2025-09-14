@@ -1,6 +1,7 @@
 {
   "name": "05_contactform_counter",
   "private": true,
+    "homepage": "https://Faizanzahid-166/Appverse-Technologies/05_contactform_counter/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -9,7 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-  "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.11",
