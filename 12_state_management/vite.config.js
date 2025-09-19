@@ -5,7 +5,7 @@ import tailwindcss from '@tailwindcss/vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(),  tailwindcss(),],
-           base: "/Appverse-Technologies/12_state_management_ecommerce/",
+           base: "/Appverse-Technologies/12_state_management/",
     build: {
       rollupOptions: {
         output: {

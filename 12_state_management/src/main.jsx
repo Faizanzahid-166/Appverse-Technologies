@@ -9,7 +9,7 @@ import { Provider } from "react-redux";
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter  basename="/Appverse-Technologies/12_state_management_ecommerce">
+    <BrowserRouter  basename="/Appverse-Technologies/12_state_management">
     <AuthProvider>
      <Provider store={store}>
        <App />
