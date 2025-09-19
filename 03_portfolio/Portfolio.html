@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="shortcut icon" href="./public/color-scheme.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+     <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="mainlogo">
+      <h1>Appverse Technologies</h1>
+    </div>
+
+    <!-- Menu Icon -->
+    <div class="menu-icon" id="menu-icon">&#9776;</div>
+
+    <!-- Links -->
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#Home">Home</a></li>
+      <li><a href="#About">About</a></li>
+      <li><a href="#Projects">Projects</a></li>
+      <li><a href="#Services">Services</a></li>
+      <li><a href="#Contact">Contact</a></li>
+    </ul>
+  </nav>
+
+   <!-- front-page and main heading Section -->
+  <section class="front-page" id="Home">
+     <div class="overlay"></div>
+    <div class="front-page-content">
+      <h1>Welcome to My Portfolio</h1>
+      <p>Discover my work and projects</p>
+       <h2>Develop anything you like</h2>
+
+        <div class="btn-container">
+      <button class="animate-btn" onclick="scrollToSection('Projects')">View Projects</button>
+      <button class="animate-btn" onclick="scrollToSection('Services')">Our Services</button>
+    </div>
+    </div>
+
+
+  </section>
+
+  <!-- about Sectin -->
+  <section class="portfolio-section" id="About">
+  <div class="portfolio-content">
+    <div class="about-text">
+      <h2>About Me</h2>
+    
+       
+      <p> <strong>Hello! I'm Faizan Zahid,</strong>   
+        a passionate web developer focused on crafting clean & user-friendly experiences. I love bringing ideas to life in the browser.
+      </p>
+      <p>
+        <strong>Skills:</strong> HTML, CSS, JavaScript, React, Git, Tailwind CSS.
+      </p>
+      <p> Bulid a beautiful,modern website with flexible component bulit from scratch.</p>
+      <p>A passionate <strong>Frontend Developer</strong> specialized in building responsive, 
+      user-focused web apps</p> 
+    </div>
+    <div class="about-image">
+      <img src="./public/hi.jpg" alt="Portfolio Picture">
+    </div>
+  </div>
+</section>
+
+<!-- project -->
+<section class="skills-section" id="Projects">
+  <h2>My Skills & Projects</h2>
+  <div class="skills-grid">
+    <div class="card">
+      <h3>Color Changer</h3>
+      <p>A simple app that allows users to change background color.</p>
+      <p><strong>Tech:</strong> HTML, CSS, JavaScript</p>
+    </div>
+    <div class="card">
+      <h3>Weather App</h3>
+      <p>Fetches weather data from OpenWeather API.</p>
+      <p><strong>Tech:</strong> React, CSS</p>
+    </div>
+    <div class="card">
+      <h3>To-Do List</h3>
+      <p>CRUD operations with LocalStorage.</p>
+      <p><strong>Tech:</strong> React</p>
+    </div>
+    <div class="card">
+      <h3>Password Generator</h3>
+      <p>Generates strong random passwords based on user-selected criteria.</p>
+      <p><strong>Tech:</strong> React</p>
+    </div>
+    <div class="card">
+      <h3>Currency Converter</h3>
+      <p>Converts currencies using real-time exchange rates.</p>
+      <p><strong>Tech:</strong> React</p>
+    </div>
+    <div class="card">
+      <h3>Music Player</h3>
+      <p>Play local and online music with UI controls.</p>
+      <p><strong>Tech:</strong> React, API</p>
+    </div>
+  </div>
+</section>
+
+<!-- services -->
+ <section class="services-section" id="Services">
+  <h2>Our Services</h2>
+  <div class="services-grid">
+    <div class="service-card">
+      <h3>Web Development</h3>
+      <img src="./public/web_development.png" alt="web Development">
+      <p>Responsive and dynamic websites using modern technologies.</p>
+    </div>
+    <div class="service-card">
+      <h3>App Development</h3>
+      <img src="./public/mobile_development.png" alt="mobile_development">
+      <p>High-performance mobile apps for Android and iOS.</p>
+    </div>
+    <div class="service-card">
+      <h3>SEO Optimization</h3>
+      <img src="./public/solution.png" alt="solution">
+      <p>Improve your website’s visibility and rank higher on search engines.</p>
+    </div>
+    <div class="service-card">
+      <h3>Digital Marketing</h3>
+      <img src="./public/digital_marketing.png" alt="digital_marketing">
+      <p>Grow your brand through social media and online ads.</p>
+    </div>
+    <div class="service-card">
+      <h3>Flutter Development</h3>
+      <img src="./public/flutter.png" alt="flutter">
+      <p>Cross-platform apps built with Flutter.</p>
+    </div>
+    <div class="service-card">
+      <h3>Content Writing</h3>
+      <img src="./public/cloud.png" alt="">
+      <p>SEO-friendly content for blogs, websites, and more.</p>
+    </div>
+  </div>
+
+  <!-- Centered last service -->
+  <div class="last-service" id="Contact">
+    <div class="service-card">
+      <h3>Get the App</h3>
+      <img src="./public/playstore.png" alt="playstore">
+      <p>Download our app to explore all services in one place.</p>
+      <button class="download-btn">Download Now</button>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- contact -->
+ <section class="contact-section">
+  <h2>Contact Me</h2>
+  <form class="contact-form">
+    <div class="form-row">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+    </div>
+    <div class="form-row">
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </div>
+  </form>
+</section>
+
+<!-- go to top -->
+
+<button id="goTopBtn" onclick="scrollToTop()">↑ Top</button>
+
+    <script src="script.js"></script>
+</body>
+</html>

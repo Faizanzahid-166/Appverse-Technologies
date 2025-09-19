@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link id="favicon" rel="icon" href="default-icon.png" type="image/png">
+    <link rel="stylesheet" href="./output.css">
+</head>
+<!-- gives custom css to body  -->
+<body class="bg-[#1D1B41] text-white min-h-screen flex justify-center p-4"> 
+
+  <!-- hole code wrap in a div -->
+  <div class="w-full max-w-xl space-y-4 mt-10">
+
+    <!-- main heading weather app -->
+    <h1 class="text-center text-green-800 text-3xl font-bold">Weather App</h1>
+
+    <!-- Search Box -->
+    <div class="flex gap-2">
+      <input
+        type="text"
+        id="cityInput"
+        placeholder="Search for location"
+        class="flex-1 p-3 rounded-xl bg-[#2C2A4A] text-white placeholder-gray-400 focus:outline-none"
+      />
+      <button
+        id="searchBtn"
+        class="bg-cyan-400 hover:bg-cyan-500 text-black font-semibold px-4 py-2 rounded-xl"
+      >
+        Search
+      </button>
+      
+    </div>
+
+    <div class="error">
+       <div  >
+            <p  id="errorMsg"  class="bg-[#2C2A4A] p-6 rounded-2xl text-red-700 text-center mt-4 font-bold hidden">could not find</p>
+        </div>
+    </div>
+
+
+
+    <!-- Weather Card -->
+    <div id="weatherCard" class="bg-[#2C2A4A] p-6 rounded-2xl shadow-xl text-center hidden">
+      <h2 id="location" class="text-xl font-bold mb-2">City, Country</h2>
+      <p id="temperature" class="text-4xl font-bold">34°C</p>
+      <p id="description" class="mb-2">Partly sunny</p>
+
+      <img id="weatherIcon" class="mx-auto my-1 w-40 h-30" src="" alt="Weather icon" title="Weather icon" />
+
+      <div class="grid grid-cols-2 gap-4 text-sm text-left mt-4">
+        <p><strong>Wind:</strong> <span id="wind">--</span></p>
+        <p><strong>Humidity:</strong> <span id="humidity">--</span></p>
+        <p><strong>Visibility:</strong> <span id="visibility">--</span></p>
+        <p><strong>Pressure:</strong> <span id="pressure">--</span></p>
+      </div>
+    </div>
+
+     
+
+  <!-- Tabs Section -->
+<div class="mt-6">
+  <div class="flex gap-4 text-sm font-semibold">
+    <button class="tab-btn text-white px-3 py-1 rounded-xl bg-[#3A3860]" data-tab="hourly">Hourly</button>
+    <button class="tab-btn text-white px-3 py-1 rounded-xl bg-[#3A3860]" data-tab="humidity">Humidity</button>
+    <button class="tab-btn text-white px-3 py-1 rounded-xl bg-[#3A3860]" data-tab="air">Air Quality</button>
+  </div>
+
+  <!-- Tab Content Area -->
+  <div id="tabContent" class="mt-4 bg-[#2C2A4A] rounded-xl p-4 space-y-2 text-sm">
+    <!-- dynamic content -->
+  </div>
+</div>
+
+  </div>
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
