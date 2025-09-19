@@ -9,12 +9,12 @@ import { Provider } from "react-redux";
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <HashRouter   basename="/Appverse-Technologies/12_state_management">
+    <BrowserRouter  basename="/Appverse-Technologies/12_state_management">
     <AuthProvider>
      <Provider store={store}>
        <App />
      </Provider>
     </AuthProvider>
-    </HashRouter >
+    </BrowserRouter>
   </StrictMode>,
 )
