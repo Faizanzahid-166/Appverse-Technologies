@@ -6,7 +6,7 @@ import tailwindcss from '@tailwindcss/vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss(),],
-   base: "/Appverse-Technologies/04_Dynamic_Profile_Card/",
+   base: '/05_contactform_counter/',
   build: {
     rollupOptions: {
       output: {
