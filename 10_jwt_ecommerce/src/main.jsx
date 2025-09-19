@@ -7,7 +7,7 @@ import App from './App.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/Appverse-Technologies/10_jwt_ecommerce">
     <AuthProvider>
     <App />
     </AuthProvider>

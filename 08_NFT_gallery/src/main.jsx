@@ -38,7 +38,11 @@ const routers = createBrowserRouter([
 
     ]
   }
-])
+],
+{
+    basename: "/Appverse-Technologies/08_NFT_gallery", // 👈 Important
+  }
+)
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

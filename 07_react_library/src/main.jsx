@@ -35,7 +35,13 @@ const  routers = createBrowserRouter([
         element:<VideoGallery />
       },
     ]
-  }]) 
+  }],
+   {
+    basename: "/Appverse-Technologies/07_react_library", // 👈 Important
+  }
+
+
+) 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
