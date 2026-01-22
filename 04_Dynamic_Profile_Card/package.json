@@ -4,14 +4,14 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "postbuild": "copy dist\\index.html dist\\404.html",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist -r https://github.com/Faizanzahid-166/Appverse-Technologies.git --dest 04_Dynamic_Profile_Card"
-  },
+"scripts": {
+  "dev": "vite",
+  "build": "vite build",
+  "postbuild": "copy dist\\index.html dist\\404.html",
+  "preview": "vite preview",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist -b gh-pages -r https://github.com/Faizanzahid-166/Appverse-Technologies.git"
+},
   "dependencies": {
     "@tailwindcss/vite": "^4.1.11",
     "react": "^19.1.0",
